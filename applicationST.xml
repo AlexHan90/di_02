@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="st01" class="com.care.root2.Student" />
+<!-- st01 = new Student();
+	 stb = new STBean();
+	 stb.setSt(st01); -->
+<bean id="stb" class="com.care.root2.STBean">
+	<property name="st">
+		<ref bean="st01"/>
+	</property>
+	<property name="name" value="홍길동11"/>
+	<property name="age" value="22"/>
+</bean>
+
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="ps111" class="com.care.root3.PrintString"/>
+	<bean id="pb" class="com.care.root3.PrintBean">
+		<property name="ps" ref="ps111"/>
+		<property name="print" value="안녕하세요"/>
+	</bean>
+
+</beans>
